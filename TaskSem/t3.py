@@ -6,14 +6,17 @@
 # строках.
 
 
-
-arr=list(int(input(f"Enter {i+1} your num:")) for i in range(int(input("Enter num len:"))))
-# arr=[1,2,3,2,3,2,3]
+# arr=list(int(input(f"Enter {i+1} your num:")) for i in range(int(input("Enter num len:"))))
+arr=[1,1,1,1,1]
 n=len(arr)
 result=0
-for i in range(n):
+for i in range(n-1):
     for j in range(i+1,n):
         if arr[i]==arr[j]:
             result+=1
+
 print(f'{arr} \n'
-      f'Кол-во парных элементов списка = {result//2}')
+      f'Кол-во парных элементов списка = {result}')
+
+# print(f'{arr} \n'
+#       f'Кол-во парных элементов списка = {result//2}')
