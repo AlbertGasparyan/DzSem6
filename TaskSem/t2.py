@@ -14,6 +14,6 @@ arr=list(int(input(f"Enter {i+1} your num:")) for i in range(int(input("Enter nu
 n=len(arr)
 result=0
 for i in range(1,n-1):
-    if (arr[i] > arr[i-1]) & (arr[i] > arr[i+1]):
+    if arr[i-1] < arr[i] > arr[i+1]:
         result+=1
 print(f'Кол-во парных элементов списка = {result}')
